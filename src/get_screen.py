@@ -1,10 +1,5 @@
-import mouse
-import time
 import pyautogui
 import keyboard
-import pyautogui as pt
-from PIL import Image
-import pytesseract
 
 def get_cordinat_by_key(key) :
     cordinat = {}
