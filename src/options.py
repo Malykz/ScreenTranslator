@@ -1,4 +1,5 @@
 import optparse
+from enum import Enum
 
 parse = optparse.OptionParser()
 
@@ -16,5 +17,11 @@ parse.add_option("--dw", dest="displayWidth",
 
 parse.add_option("-k", dest="key",
                  help="Set activate key", default="t")
+
+parse.add_option("--sl", dest="sl",
+                 help="Set source language", default="en")
+
+parse.add_option("--tl", dest="tl",
+                 help="Set output language", default="id")
 
 (options, args) = parse.parse_args()
