@@ -1,9 +1,10 @@
 from gui import app, display_label
-import get_screen
-from copy import copy
+import getScreen
+
 
 if __name__ == "__main__" :
-    cordinate = get_screen.get_image_size()
-    cordinate_copy = copy(cordinate)
-    display_label("ScreenTranslator By Upi", cordinate_copy)
+    
+    cordinate = getScreen.get_image_size()
+
+    display_label("ScreenTranslator By Upi", cordinate)
     app.mainloop()
