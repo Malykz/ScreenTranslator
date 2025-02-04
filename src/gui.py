@@ -13,7 +13,6 @@ label = ctk.CTkLabel(app)
 label.pack(pady=2)
 
 def display_label(t, cordinate: dict) -> str:
-
     label.configure(text=t, font=("Arial", int(options.fontSize)), justify="left", width=30)
     teks = t
 

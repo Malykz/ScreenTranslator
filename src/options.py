@@ -1,5 +1,4 @@
 import optparse
-from enum import Enum
 
 parse = optparse.OptionParser()
 
@@ -23,5 +22,8 @@ parse.add_option("--sl", dest="sl",
 
 parse.add_option("--tl", dest="tl",
                  help="Set output language", default="id")
+
+parse.add_option("-w", "--word", dest="wordsWrap",
+                 help="Set word per column", default=5, type="int")
 
 (options, args) = parse.parse_args()
